@@ -1,0 +1,19 @@
+// ======================================
+// BUTTON STYLES
+// ======================================
+
+.btn--default {
+  @include btn($color-secondary);
+}
+.btn--success {
+  @include btn($color-success);
+}
+.btn--error {
+  @include btn($color-error);
+}
+.btn--warning {
+  @include btn($color-warning);
+}
+.btn--info {
+  @include btn($color-info);
+}

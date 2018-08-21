@@ -1,13 +1,17 @@
-// Colors
-#58E1C1 // teal primary
-#51DDFC // blue default
-#63CC82 // success green
-#3FABCA // grid col 6
-#7EE6FD // grid col 4
-#DEB2EE // grid col 3
-#88D9A0 // grid col 5
-#EC9FA3 // grid col 7
-#FD9F85 // grid col 8
-#E4757A // error
-#FD7856 // warning
-#927BC1 // info
+// COLORS
+$white: #fff;
+
+$color-primary: #58e1c1;
+$color-secondary: #51DDFC;
+$color-success: #63cc82;
+$color-error: #e4757a;
+$color-warning: #fd7856;
+$color-info: #927bc1;
+
+$color-text: #5e5e5e;
+$color-text-block: #4c4c4c;
+// FONTS
+$font-stack-primary: 'Roboto', sans-serif;
+
+// LAYOUT
+$max-width: 1000px;

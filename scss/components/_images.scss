@@ -1,3 +1,20 @@
 // ======================================
 //  Image Styles
 // ======================================
+
+.img--logo {
+  @include center(150px);
+  @include img;
+}
+
+.img--frame {
+  @include center(350px);
+  @include img;
+  padding: .75em;
+  border: 1px solid $color-text;
+}
+
+.img--avatar {
+  @include center(175px);
+  @include img;
+}

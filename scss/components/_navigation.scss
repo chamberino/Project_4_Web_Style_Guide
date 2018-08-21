@@ -1,0 +1,26 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+
+.nav {
+  @include center(100%);
+  margin-top: 3em;
+  margin-bottom: 6em;
+  text-align: center;
+  .nav__item {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    text-decoration: none;
+    color: $color-text;
+    width: 100%;
+    border-radius: 5px;
+    padding: .75em;
+    &:hover {
+      background-color: $color-primary;
+      color: $white;
+    }
+  }
+}
