@@ -5,9 +5,6 @@
 .img--logo {
   @include center(150px);
   @extend %img;
-  // @media (min-width: $break-l) {
-  //   display: inline;
-  // }
 }
 
 .img--frame {
@@ -15,6 +12,7 @@
   @extend %img;
   padding: .75em;
   border: 1px solid $color-text;
+  margin-top: .5em;
   margin-bottom: 2em;
 }
 
@@ -22,4 +20,5 @@
   @include center(175px);
   @extend %img;
   margin-bottom: 1em;
+  margin-top: 1em;
 }

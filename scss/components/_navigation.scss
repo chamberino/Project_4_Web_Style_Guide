@@ -2,7 +2,6 @@
 //  Navigation Styles
 // ======================================
 
-
 .nav {
   @include center(100%);
   margin-bottom: 5em;
@@ -13,12 +12,7 @@
     flex-direction: row;
   }
   .nav__item {
-    // margin-top: 3em;
     @include center(100%);
-    // margin-bottom: 2em;
-    // @media (min-width: $break-l) {
-    //   flex-direction: row;
-    // }
   }
   a {
     display: block;

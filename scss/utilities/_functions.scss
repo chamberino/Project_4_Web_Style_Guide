@@ -2,10 +2,12 @@
 //    FUNCTIONS
 // ======================================
 
+// Converts pixel value to percentage. Defaults to maxwidth
 @function px-to-pc($target, $context: $max-width) {
   @return ($target / $context) * 100%;
 }
 
+// Outputs a percentage value that will be used as the flex basis value
 @function per-line($items) {
   $g-pct: px-to-pc($gutter, $context: $max-width) * 2;
   $g-total: $items * $g-pct;

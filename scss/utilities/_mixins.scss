@@ -10,6 +10,8 @@
   margin-right: auto;
 }
 
+
+// GRID - includes grid function, which defaults to max-width value of 100%
 @mixin grid($per-line, $color) {
 flex: 1 per-line($per-line);
 text-align: center;
@@ -19,19 +21,7 @@ border-radius: 5px;
 padding: $gutter;
 margin: 5px;
 background-color: $color;
+  @media (min-width: $break-m) {
+margin-bottom: 2em;
+  }
 }
-
-// @mixin btn($bc) {
-//     @include center(100%);
-//     font-size: 1em;
-//     color: white;
-//     display: block;
-//     font-weight: 400;
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     padding: 0.75em 2em;
-//     border: none;
-//     border-radius: 0.35em;
-//     background-color: $bc;
-//     margin-top: 1.5em;
-// }
