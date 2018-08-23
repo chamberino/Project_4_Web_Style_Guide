@@ -2,6 +2,7 @@
 //  MIXINS
 // =========================================
 
+
 // Center containers
 @mixin center($w: 100%) {
   width: $w;
@@ -23,5 +24,18 @@ margin: 5px;
 background-color: $color;
   @media (min-width: $break-m) {
 margin-bottom: 2em;
+  }
+}
+
+//Desktop Media Query
+@mixin desktop {
+  @media (min-width: #{$break-m}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$break-l}) {
+    @content;
   }
 }

@@ -9,7 +9,7 @@
   font-family: $font-stack-primary;
   font-weight: 300;
   margin: 2em 1em 2em;
-  @media (min-width: $break-l) {
+  @mixin desktop-large {
     margin: 4em 6em;
   }
 }

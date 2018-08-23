@@ -11,7 +11,7 @@
 }
 
 .grid__col--9 {
-  @media (min-width: $break-l) {
+  @mixin desktop-large {
     align-self: flex-start;
   }
 }
@@ -21,7 +21,7 @@
   flex-direction: column;
   flex: 0 per-line(5);
   justify-content: space-between;
-  @media (min-width: $break-m) {
+  @include desktop {
    display: flex;
    flex-direction: row;
    flex: 1 per-line(5);
@@ -85,7 +85,7 @@
 
 .grid__col--7.theme__colors.centered {
   @include grid(1, $color-col-7);
-  @media (min-width: $break-m) {
+  @include desktop {
     max-width: 60%;
     margin: auto;
     margin-top: 5px;
@@ -93,16 +93,17 @@
 }
 
 .card {
-  @media (min-width: $break-m) {
+  @include desktop {
   padding-right: 4em;
   }
 }
 
 .grid__col--8 {
-  @media (min-width: $break-m) {
+  @include desktop {
   max-width: 65%;
   }
 }
+
 
 .grid__row {
   display: flex;
@@ -110,8 +111,8 @@
   justify-content: space-between;
   margin-left: 2em;
   margin-right: 2em;
-  @media (min-width: $break-m) {
-    flex-direction: row;
-    justify-content: space-around;
+  @include desktop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
-}

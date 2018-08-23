@@ -36,9 +36,6 @@ ul {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin: 2em 1em 2em; }
-  @media (min-width: 1080px) {
-    .container {
-      margin: 4em 6em; } }
 
 .headline--secondary {
   font-weight: 100;
@@ -180,10 +177,6 @@ ul {
 
 .grid__col--4 {
   flex-grow: 1; }
-
-@media (min-width: 1080px) {
-  .grid__col--9 {
-    align-self: flex-start; } }
 
 .grid__col--12 {
   display: flex;
