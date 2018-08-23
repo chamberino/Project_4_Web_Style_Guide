@@ -4,17 +4,22 @@
 
 .img--logo {
   @include center(150px);
-  @include img;
+  @extend %img;
+  // @media (min-width: $break-l) {
+  //   display: inline;
+  // }
 }
 
 .img--frame {
   @include center(350px);
-  @include img;
+  @extend %img;
   padding: .75em;
   border: 1px solid $color-text;
+  margin-bottom: 2em;
 }
 
 .img--avatar {
   @include center(175px);
-  @include img;
+  @extend %img;
+  margin-bottom: 1em;
 }

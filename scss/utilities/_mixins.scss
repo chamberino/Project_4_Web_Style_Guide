@@ -3,30 +3,35 @@
 // =========================================
 
 // Center containers
-@mixin center($w) {
+@mixin center($w: 100%) {
   width: $w;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin img {
-display: block;
+@mixin grid($per-line, $color) {
+flex: 1 per-line($per-line);
 text-align: center;
-margin-top: 3em;
+color: $color-text;
+border: none;
+border-radius: 5px;
+padding: $gutter;
+margin: 5px;
+background-color: $color;
 }
 
-@mixin btn($bc) {
-    @include center(100%);
-    font-size: 1em;
-    color: white;
-    display: block;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.75em 2em;
-    border: none;
-    border-radius: 0.35em;
-    background-color: $bc;
-    margin-top: 1.5em;
-}
+// @mixin btn($bc) {
+//     @include center(100%);
+//     font-size: 1em;
+//     color: white;
+//     display: block;
+//     font-weight: 400;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     padding: 0.75em 2em;
+//     border: none;
+//     border-radius: 0.35em;
+//     background-color: $bc;
+//     margin-top: 1.5em;
+// }

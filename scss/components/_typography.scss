@@ -8,7 +8,10 @@
   line-height: 1.5;
   font-family: $font-stack-primary;
   font-weight: 300;
-  margin: 0 2em;
+  margin: 2em 1em 2em;
+  @media (min-width: $break-l) {
+    margin: 4em 6em;
+  }
 }
 
 .headline--secondary {
@@ -26,13 +29,15 @@
 .link {
   color: $color-secondary;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .blockquote {
   font-style: italic;
   font-size: 1.5em;
-  border-left: 6px solid $color-primary;
+  border-left: 9px solid $color-primary;
   border-radius: 5px 5px;
   border-bottom-left-radius: 5px;
   padding-left: 1em;
+  margin-bottom: 2.5em;
 }
