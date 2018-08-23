@@ -2,6 +2,17 @@
 //   GRIDS
 // ==================
 
+.grid__row {
+  @include flex ($display: flex, $dir:column, $just:space-between){
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+  @include desktop {
+    @include flex ($dir:row, $just:space-around){
+      }
+    }
+  }
+
 .grid__col--8 {
   flex-grow: 2;
 }
@@ -17,16 +28,14 @@
 }
 
 .grid__col--12 {
-  display: flex;
-  flex-direction: column;
+  @include flex ($display: flex, $dir:column, $just:space-between){
   flex: 0 per-line(5);
-  justify-content: space-between;
+  }
   @include desktop {
-   display: flex;
-   flex-direction: row;
-   flex: 1 per-line(5);
-   padding-bottom: 2em;
-   justify-content: space-between;
+    @include flex ($display: flex, $dir:row, $just:space-between){
+      flex: 1 per-line(5);
+      padding-bottom: 2em;
+    }
   }
 }
 
@@ -103,16 +112,3 @@
   max-width: 65%;
   }
 }
-
-
-.grid__row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 2em;
-  margin-right: 2em;
-  @include desktop {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  }

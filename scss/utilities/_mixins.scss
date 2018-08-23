@@ -39,3 +39,11 @@ margin-bottom: 2em;
     @content;
   }
 }
+
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}

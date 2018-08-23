@@ -29,3 +29,20 @@ $gutter: 10px;
 // BREAKPOINTS
 $break-m: 769px;
 $break-l: 1080px;
+
+//FLEX PROPERTIES
+$flex: flex;
+$row: row;
+$col: column;
+$flex-wrap: wrap;
+$just-center: center;
+$just-space-around: space-around;
+$just-space-between: space-between;
+
+// @mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+//     display: $display;
+//     flex-direction: $dir;
+//     flex-wrap: $wrap;
+//     justify-content: $just;
+//     @content;
+// }
