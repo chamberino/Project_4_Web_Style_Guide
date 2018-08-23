@@ -1,3 +1,139 @@
 // ==================
 //   GRIDS
 // ==================
+
+.grid__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+  @media (min-width: $break-m) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.grid__col--8 {
+  flex-grow: 2;
+}
+
+.grid__col--4 {
+  flex-grow: 1;
+}
+
+.grid__col--3 {
+  @media (min-width: $break-l) {
+    // align-self: flex-start;
+  }
+}
+
+.grid__col--9 {
+  @media (min-width: $break-l) {
+    align-self: flex-start;
+  }
+}
+
+.grid__col--12 {
+  display: flex;
+  flex-direction: column;
+  flex: 0 per-line(5);
+  justify-content: space-between;
+  // width: 100%;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  @media (min-width: $break-m) {
+   display: flex;
+   flex-direction: row;
+   flex: 1 per-line(5);
+   padding-bottom: 2em;
+   justify-content: space-between;
+  }
+}
+
+// .btn--default.theme__colors {
+//   flex: 1 per-line(5)
+// }
+
+.theme__colors {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.grid__col--12.theme__colors {
+  @include grid(1, $color-col-12);
+  justify-content: center;
+}
+
+.grid__col--3.theme__colors {
+  @include grid(4, $color-col-3);
+}
+
+.grid__col--4.theme__colors {
+@include grid(3, $color-col-4);
+}
+
+.grid__col--5.theme__colors {
+@include grid(3, $color-col-5)
+}
+
+.grid__col--7.theme__colors {
+  @include grid(1, $color-col-7);
+  @media (min-width: $break-m) {
+    max-width: 60%;
+  }
+}
+
+.grid__col--8.theme__colors {
+@include grid(2, $color-col-8)
+}
+
+.grid__col--6.theme__colors {
+  @include grid(2, $color-col-6);
+}
+.grid__col--7.theme__colors.centered {
+  @include grid(1, $color-col-7);
+  @media (min-width: $break-m) {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 5px;
+  }
+}
+
+// .grid__col--4 {
+//   display: flex;
+//   // flex-grow: 1;
+// }
+
+.card {
+  @media (min-width: $break-m) {
+  padding-right: 4em;
+  }
+}
+
+.grid__col--8 {
+  @media (min-width: $break-m) {
+  max-width: 65%;
+  }
+}
+
+
+
+
+// .container
+// .grid__row
+// .grid__col--2
+// .grid__col--3.theme__colors
+// .grid__col--4.theme__colors
+// .grid__col--5.theme__colors
+// .grid__col--6.theme__colors
+// .grid__col--7.theme__colors.centered
+// .grid__col--8
+// .grid__col--9
+// .grid__col--10
+// .grid__col--11
+// .grid__col--12
+// .centered
+// .theme__colors

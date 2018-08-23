@@ -2,18 +2,45 @@
 // BUTTON STYLES
 // ======================================
 
+
 .btn--default {
-  @include btn($color-secondary);
+  @extend %btn;
+  background-color: $color-secondary;
+  flex: 1 per-line(5);
+  padding: $gutter;
+  // margin: 5px;
+  // margin-bottom: 10px;
 }
 .btn--success {
-  @include btn($color-success);
+  @extend %btn;
+  background-color:$color-success;
+  flex: 1 per-line(5);
+  padding: $gutter;
+  // margin: 5px;
 }
 .btn--error {
-  @include btn($color-error);
+  @extend %btn;
+  background-color:$color-error;
+  flex: 1 per-line(5);
+  padding: $gutter;
+  // margin: 5px;
+
 }
 .btn--warning {
-  @include btn($color-warning);
+  @extend %btn;
+  background-color:$color-warning;
+  flex: 1 per-line(5);
+  padding: $gutter;
+  // margin: 5px;
 }
 .btn--info {
-  @include btn($color-info);
+  @extend %btn;
+  background-color:$color-info;
+  flex: 1 per-line(5);
+  padding: $gutter;
+  // max-width: 95%;
+  // margin-left: auto;
+  // margin-right: auto;
+  // text-align: center;
+  // margin: 5px;
 }
